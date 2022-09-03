@@ -1,19 +1,28 @@
+/* Import font Noto Serif HK, Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Serif+HK:wght@400;500;600;700;800;900&display=swap');
 
+/* Define color custom properties */
 :root {
     --bg-color: rgb(239, 236, 233);
     --color: rgb(55, 49, 48);
     --dark-shadow: 0px 0px 12px rgba(40, 39, 38, 0.23);
     --link-color: rgb(209, 143, 43);
     --link-color-active: rgb(244, 167, 50);
-
-    /* 210, 153, 68 */
 }
 
+/* Default styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -29,11 +38,13 @@ body {
     flex-direction: column;
 }
 
+/* Main */
 main {
     width: 100%;
     max-width: 1280px;
 }
 
+/* Header */
 h1 {
     margin: 3rem 2rem;
     font-weight: 900;
@@ -46,12 +57,14 @@ h2 {
     font-size: 1.25rem;
 }
 
+/* Paragraph */
 p {
     margin: 1rem 2rem;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
+/* Image */
 img {
     width: 100%;
     height: auto;
@@ -59,6 +72,7 @@ img {
     box-shadow: var(--dark-shadow);
 }
 
+/* List */
 ul,
 ol {
     font-size: 1rem;
@@ -79,6 +93,7 @@ ol {
     margin: 0rem 3.3rem 3rem 3.3rem;
 }
 
+/* Links */
 a {
     font-size: 1.5rem;
     color: var(--link-color);
@@ -99,6 +114,11 @@ a {
     text-transform: uppercase;
 }
 
+.return-to-top-link {
+    margin: 4rem 2rem 2rem 2rem;
+}
+
+/* Hover, Active State */
 a:hover,
 .back-button:hover {
     opacity: 0.8;
@@ -109,11 +129,16 @@ a:active,
     color: var(--link-color-active);
 }
 
-.return-to-top-link {
-    margin: 4rem 0rem 3rem 2rem;
-}
-
+/* Footer */
 footer {
     width: 100%;
     height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+footer a {
+    font-size: 0.875rem;
 }

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Serif+HK:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-color: rgb(239, 236, 233);
+    --color: rgb(55, 49, 48);
+    --dark-shadow: 0px 0px 12px rgba(40, 39, 38, 0.23);
+    --link-color: rgb(209, 143, 43);
+    --link-color-active: rgb(244, 167, 50);
+
+    /* 210, 153, 68 */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Serif HK', -apple-system, 'Helvetica Neue', Helvetica,
+        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    max-width: 1280px;
+}
+
+h1 {
+    margin: 3rem 2rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 2rem 2rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+p {
+    margin: 1rem 2rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--dark-shadow);
+}
+
+ul,
+ol {
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    line-height: 2.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ol li {
+    margin-bottom: 1rem;
+}
+
+ol {
+    font-size: 1.25rem;
+    margin: 0rem 3.3rem 3rem 3.3rem;
+}
+
+a {
+    font-size: 1.5rem;
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.back-button {
+    font-family: 'Noto Serif HK', -apple-system, 'Helvetica Neue', Helvetica,
+        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    color: var(--link-color);
+    padding: 0.8rem 0.8rem;
+    border-radius: 12px;
+    margin: 2rem 0rem 0rem 0.4rem;
+    text-transform: uppercase;
+}
+
+a:hover,
+.back-button:hover {
+    opacity: 0.8;
+}
+
+a:active,
+.back-button:active {
+    color: var(--link-color-active);
+}
+
+.return-to-top-link {
+    margin: 4rem 0rem 3rem 2rem;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
